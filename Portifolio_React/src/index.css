@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@media (max-width: 765px) {
+    .bg-gradient-to-r {
+        padding-top: 0 !important;
+        /* Removes top padding */
+        margin-top: 0 !important;
+        /* Removes top margin */
+        height: 100vh !important;
+        /* Ensures full height */
+    }
+}
