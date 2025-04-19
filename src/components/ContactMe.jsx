@@ -24,9 +24,9 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-300 via-blue-200 to-indigo-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-300 via-purple-100 to-indigo-300 flex flex-col">
       <Navbar />
-      <div className="flex-grow flex justify-center items-center px-4 pt-10 pb-10">
+      <div className="flex-grow flex justify-center items-center px-4 pt-25 pb-10">
         <form
           onSubmit={handleSubmit}
           className="backdrop-blur-lg bg-white/60 border border-white/30 shadow-2xl rounded-xl p-8 w-full max-w-2xl"

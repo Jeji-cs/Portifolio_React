@@ -43,15 +43,13 @@ const Skills = () => {
 
   return (
     <div
-      className="bg-gradient-to-r to-indigo-200 from-indigo-300"
-      style={{
-        minHeight: "100vh",
-      }}
+      className="bg-gradient-to-br from-indigo-300 via-purple-300 to-indigo-300 min-h-screen mt-15"
+      style={{ overflow: "auto" }}
     >
       <Navbar />
       <div
-        style={{ padding: "2rem" }}
-        className="bg-gradient-to-r to-indigo-200 from-indigo-300 lg:mt-32 md:mt-48 sm:mt-60"
+        className="pt-16 sm:pt-20 md:pt-24 lg:pt-28"
+        style={{ padding: "1rem 2rem" }}
       >
         <h1
           style={{

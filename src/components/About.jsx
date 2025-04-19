@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-grow bg-gradient-to-r from-indigo-300 to-indigo-200 flex flex-col items-center justify-center text-center relative">
+      <div className="flex-grow bg-gradient-to-br from-indigo-300 via-purple-300 to-indigo-300 flex flex-col items-center justify-center text-center relative mt-15">
         <div className="max-w-7xl w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 sm:py-8 md:py-10 rounded-2xl  transition-transform duration-300 transform hover:scale-105 hover:cursor-pointer">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-3 sm:mb-4 md:mb-6">
             About Me

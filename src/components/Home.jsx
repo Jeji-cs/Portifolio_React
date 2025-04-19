@@ -6,15 +6,15 @@ import resume from "../images/Jeji_Chandra_Sekhar.pdf";
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-r to-indigo-200 from-indigo-300 h-screen flex flex-col">
+    <div className="bg-gradient-to-br from-indigo-300 via-purple-300 to-indigo-300 h-screen flex flex-col">
       <Navbar />
-      <section className="flex flex-1 items-center justify-center text-black px-6 md:px-20">
+      <section className="flex flex-1 items-center justify-center text-black px-6 md:px-20 mt-10">
         <div className="flex flex-col md:flex-row items-center w-full max-w-6xl">
           <div className="relative mb-6 md:mb-0">
             <img
               src={img}
               alt="Profile"
-              className="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-[#E3354C] object-cover"
+              className="w-36 h-36 sm:w-52 sm:h-52 md:w-80 md:h-80 rounded-full border-4 border-[#E3354C] object-cover"
             />
           </div>
 

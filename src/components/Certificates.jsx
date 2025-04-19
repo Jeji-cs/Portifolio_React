@@ -8,7 +8,6 @@ const Certificates = () => {
       img: "ReactJS.png",
       link: "https://drive.google.com/file/d/1L0IfqWNVKvk-8RPETy6mI6QTyu-kmUFU/view?usp=sharing",
     },
-
     {
       title: "HTML Certificate",
       img: "HTML.png",
@@ -37,76 +36,35 @@ const Certificates = () => {
   ];
 
   return (
-    <div
-      style={{
-        backgroundColor: "#E5EDF1",
-        minHeight: "100vh",
-      }}
-    >
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-300 via-purple-300 to-indigo-300">
       <Navbar />
-      <div className="bg-gradient-to-r to-indigo-200 from-indigo-300 h-[110vh] lg:pt-24 md:pt-16 sm:pt-32">
-        <h1
-          style={{
-            textAlign: "center",
-            marginBottom: "2rem",
-            fontSize: "2.5rem",
-            fontWeight: "bold",
-            color: "#333",
-            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-          }}
-        >
+
+      <main className="flex-grow px-6 py-12 mt-15">
+        <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
           My Certificates
         </h1>
 
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "2rem",
-          }}
-        >
+        <div className="flex flex-wrap justify-center gap-8">
           {certificates.map((cert, index) => (
             <a
               key={index}
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                transition: "transform 0.3s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.03)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-              }}
+              className="transform hover:scale-105 transition duration-300"
             >
               <img
                 src={cert.img}
                 alt={cert.title}
-                style={{
-                  width: "300px",
-                  height: "200px",
-                  objectFit: "cover",
-                  borderRadius: "10px",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-                }}
+                className="w-72 h-48 object-cover rounded-xl shadow-md"
               />
-              <p
-                style={{
-                  textAlign: "center",
-                  color: "#333",
-                  marginTop: "0.5rem",
-                }}
-              >
+              <p className="text-center mt-2 text-gray-700 font-medium">
                 {cert.title}
               </p>
             </a>
           ))}
         </div>
-      </div>
+      </main>
     </div>
   );
 };
